@@ -4,6 +4,9 @@ VARCount=64
 Version=1
 SCREENDSIZE=480X272
 SPADDRESS=5000
+ProVersion=642
+[CMD]
+CMD0=004D=Capital M
 [IMG]
 000=000_boot.bmp
 001=001_home.bmp
@@ -49,3 +52,5 @@ SPADDRESS=5000
 248=248_power_loss.bmp
 249=249_wait.bmp
 250=250_kill.bmp
+216=216_popup_purge.bmp
+217=217_popup_purge_sel.bmp

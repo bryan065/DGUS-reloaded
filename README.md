@@ -2,7 +2,9 @@
 
 DWIN T5UID1 touchscreen firmware for 3D printers running Marlin.
 
-Requires using a modified version of Marlin to work properly, which can be found in [this repository](https://github.com/Desuuuu/Marlin).
+**Forked to keep the firmware up-to-date with newer Marlin features. Test machine is an Ender-7 with a Bigtreetech SKR Mini e3 V2.0 board with stock screen.**
+
+~~Requires using a modified version of Marlin to work properly, which can be found in [this repository](https://github.com/Desuuuu/Marlin).~~
 
 ## Disclaimer
 **This software is provided without any warranty. You are solely responsible for your use of it.**
@@ -23,6 +25,23 @@ This firmware was inspired by Creality printers' touchscreen firmware. Some feat
 * BLTouch reset shortcut (if a BLTouch is installed)
 * Print statistics (on the informations screen)
 * Playing sounds using M300 (the frequency parameter is the index of the audio file)
+
+Added/changed:
+
+* Updated firmware to latest T5L core firmware. V61 UI and V21 OS. (Resistive touchscreen needs calibration via .cfg file)
+* Updated .cfg file, .icl file for latest core firmware.
+* Updated G-code input to work with latest T5L firmware. Also added spacebar...
+* Added hotend and bed temp shortcuts to home page (click on the temp)
+* Added cooling shortcuts to home page (click on the hotend or bed icon)
+* Added filament sensor check (first sensor only), prior to printing.
+* Added filament load/unload buttons (M701/M702).
+* Added filament popup handling and purge popups.
+
+Goals:
+
+* [ ] Add serial console to G-code input page
+* [ ] Add MPC support
+* [ ] Add ability to edit parameters (acceleration/feedrate/jerk/tmc uart/etc)
 
 Focus was also put on making this firmware as easy and safe to use as possible from a user perspective.
 
